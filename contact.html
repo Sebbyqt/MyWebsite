@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="contact.css">
+
+   <title>Contact - Sebastian's Website</title>
+</head>
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="index.html" class="nav__logo"><img src="assets/img/logonew.png"></a>
+
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li><a href="index.html" class="nav__link">HOME</a></li>
+               <li><a href="about.html" class="nav__link">ABOUT</a></li>
+               <li><a href="contact.html" class="nav__link">CONTACT</a></li>
+            </ul>
+
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-large-line"></i>
+            </div>
+         </div>
+
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-apps-2-line"></i>
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+
+      <!--==================== CONTACT HERO ====================-->
+      <section class="contact-hero">
+         <div class="contact-hero__container">
+            <span class="contact-hero__subtitle">LET'S TALK</span>
+            <h1 class="contact-hero__title">CONTACT ME</h1>
+            <p class="contact-hero__description">
+               Have a project in mind, a question, or just want to say hi? 
+               I'd love to hear from you. Fill out the form below or reach me through my socials.
+            </p>
+         </div>
+      </section>
+
+      <!--==================== CONTACT BODY ====================-->
+      <section class="contact">
+         <div class="contact__container">
+
+            <!--===== INFO COLUMN =====-->
+            <div class="contact__info">
+               <h2 class="contact__info-title">GET IN TOUCH</h2>
+               <p class="contact__info-description">
+                  Whether you're a fellow developer, a potential collaborator, or just curious about my work,
+                  don't hesitate to reach out. I'll try to respond within 2-3 business days.
+               </p>
+
+               <div class="contact__details">
+                  <div class="contact__detail-item">
+                     <div class="contact__detail-icon">
+                        <i class="ri-mail-line"></i>
+                     </div>
+                     <div class="contact__detail-content">
+                        <span class="contact__detail-label">EMAIL</span>
+                        <a href="mailto:jansenamandy@gmail.com" class="contact__detail-value">jansenamandy@gmail.com</a>
+                     </div>
+                  </div>
+
+                  <div class="contact__detail-item">
+                     <div class="contact__detail-icon">
+                        <i class="ri-map-pin-line"></i>
+                     </div>
+                     <div class="contact__detail-content">
+                        <span class="contact__detail-label">LOCATION</span>
+                        <span class="contact__detail-value">Philippines</span>
+                     </div>
+                  </div>
+
+                  <div class="contact__detail-item">
+                     <div class="contact__detail-icon">
+                        <i class="ri-time-line"></i>
+                     </div>
+                     <div class="contact__detail-content">
+                        <span class="contact__detail-label">RESPONSE TIME</span>
+                        <span class="contact__detail-value">Within 24–48 hours</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="contact__socials">
+                  <span class="contact__socials-label">FIND ME ON</span>
+                  <div class="contact__socials-links">
+                     <a href="https://www.facebook.com/jansen.amandy" target="_blank" class="contact__social-link">
+                        <i class="ri-facebook-circle-fill"></i>
+                     </a>
+                     <a href="https://x.com/SebbyKun_" target="_blank" class="contact__social-link">
+                        <i class="ri-twitter-x-line"></i>
+                     </a>
+                     <a href="https://www.instagram.com/n0t_sebby/" target="_blank" class="contact__social-link">
+                        <i class="ri-instagram-line"></i>
+                     </a>
+                     <a href="https://www.linkedin.com/in/jansen-amandy-6153663b1/" target="_blank" class="contact__social-link">
+                        <i class="ri-linkedin-fill"></i>
+                     </a>
+                     <a href="https://www.youtube.com/@sebbykun2499" target="_blank" class="contact__social-link">
+                        <i class="ri-youtube-fill"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="contact__form-wrapper">
+               <form
+                  class="contact__form"
+                  id="contact-form"
+                  action="https://formspree.io/f/xjgpdzwb"
+                  method="POST"
+               >
+                  <div class="contact__form-group">
+                     <label for="name" class="contact__form-label">YOUR NAME</label>
+                     <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        class="contact__form-input" 
+                        placeholder="Sebastian Cruz"
+                        required
+                     >
+                  </div>
+
+                  <div class="contact__form-group">
+                     <label for="email" class="contact__form-label">YOUR EMAIL</label>
+                     <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        class="contact__form-input" 
+                        placeholder="hello@example.com"
+                        required
+                     >
+                  </div>
+
+                  <div class="contact__form-group">
+                     <label for="subject" class="contact__form-label">SUBJECT</label>
+                     <input 
+                        type="text" 
+                        id="subject" 
+                        name="subject" 
+                        class="contact__form-input" 
+                        placeholder="Project Collaboration"
+                        required
+                     >
+                  </div>
+
+                  <div class="contact__form-group">
+                     <label for="message" class="contact__form-label">MESSAGE</label>
+                     <textarea 
+                        id="message" 
+                        name="message" 
+                        class="contact__form-textarea" 
+                        placeholder="Hi Sebastian, I'd love to..."
+                        rows="5"
+                        required
+                     ></textarea>
+                  </div>
+
+                  <button type="submit" class="contact__form-button">
+                     SEND MESSAGE <i class="ri-send-plane-fill"></i>
+                  </button>
+
+                  <p class="contact__form-status" id="form-status"></p>
+               </form>
+            </div>
+
+         </div>
+      </section>
+
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container">
+         <h3 class="footer__title">Copyright 2026 © All Rights Reserved.</h3>
+         
+         <p class="footer__description">
+           If you like what you see feel free to contact me on some of the links below, or if you have any questions or suggestions, don't hesitate to reach out! I am always open to feedback and would love to hear from you.
+         </p>
+         
+         <div class="footer__social">
+            <a href="https://www.facebook.com/jansen.amandy" target="_blank" class="footer__social-link">
+               <i class="ri-facebook-circle-fill"></i>
+            </a>
+            <a href="https://x.com/SebbyKun_" target="_blank" class="footer__social-link">
+               <i class="ri-twitter-x-line"></i>
+            </a>
+            <a href="https://www.instagram.com/n0t_sebby/" target="_blank" class="footer__social-link">
+               <i class="ri-instagram-line"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jansen-amandy-6153663b1/" target="_blank" class="footer__social-link">
+               <i class="ri-linkedin-fill"></i>
+            </a>
+            <a href="https://www.youtube.com/@sebbykun2499" target="_blank" class="footer__social-link">
+               <i class="ri-youtube-fill"></i>
+            </a>
+         </div>
+
+         <span class="footer__copy">
+            Made with <i class="ri-heart-fill"></i> and care :D <br>
+            All photos are sourced from <a href="https://www.pexels.com/" target="_blank">pexels.com</a>
+         </span>
+      </div>
+   </footer>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="main.js"></script>
+   <script>
+      const params = new URLSearchParams(window.location.search)
+      if (params.get('submitted') === 'true') {
+         const status = document.getElementById('form-status')
+         if (status) {
+            status.textContent = '✓ Message sent! I\'ll get back to you soon.'
+            status.className = 'contact__form-status success'
+         }
+      }
+   </script>
+</body>
+</html>
